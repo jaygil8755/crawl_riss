@@ -21,13 +21,13 @@ You can install this package via pip:
 > CSV 파일이 /content/생성형_AI_학술논문/생성형_AI_학술논문.csv에 저장되었습니다.
 > Excel 파일이 /content/생성형_AI_학술논문/생성형_AI_학술논문.xlsx에 저장되었습니다.
 
-# 학위 논문 수집
+##### 학위 논문 수집
 `crawl_hw.crawl_papers_hw("생성형 AI")`
-# 실행 결과:
+`실행 결과:
 # 전체 검색된 논문 수: 374개
 # 수집할 논문 수: 374개
 # CSV 파일이 /content/생성형_AI_학위논문/생성형_AI_학위논문.csv에 저장되었습니다.
-# Excel 파일이 /content/생성형_AI_학위논문/생성형_AI_학위논문.xlsx에 저장되었습니다.
+# Excel 파일이 /content/생성형_AI_학위논문/생성형_AI_학위논문.xlsx에 저장되었습니다.`
 
 # 학술 논문 수집 - 수집할 수 지정
 `crawl_hw.crawl_papers_hw("딥러닝", 11)`
