@@ -13,7 +13,6 @@ setup(
         'beautifulsoup4',
         'pandas',
         'tqdm',
-        'time',
         'openpyxl',
     ],
       classifiers=[
