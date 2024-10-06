@@ -11,10 +11,10 @@ You can install this package via pip:
 
 ```bash
 pip install crawl_riss
-from crawl_riss import crawl_hs, crawl_hw
+from crawl_riss import crawl_hs, crawl_hw```
 
 # 학술 논문 수집
-crawl_hs.crawl_papers_hs("생성형 AI")
+`crawl_hs.crawl_papers_hs("생성형 AI")`
 
 # 실행 결과:
 # 전체 검색된 논문 수: 1079개
@@ -22,9 +22,8 @@ crawl_hs.crawl_papers_hs("생성형 AI")
 # CSV 파일이 /content/생성형_AI_학술논문/생성형_AI_학술논문.csv에 저장되었습니다.
 # Excel 파일이 /content/생성형_AI_학술논문/생성형_AI_학술논문.xlsx에 저장되었습니다.
 
-
 # 학위 논문 수집
-crawl_hw.crawl_papers_hw("생성형 AI")
+`crawl_hw.crawl_papers_hw("생성형 AI")`
 # 실행 결과:
 # 전체 검색된 논문 수: 374개
 # 수집할 논문 수: 374개
@@ -32,7 +31,7 @@ crawl_hw.crawl_papers_hw("생성형 AI")
 # Excel 파일이 /content/생성형_AI_학위논문/생성형_AI_학위논문.xlsx에 저장되었습니다.
 
 # 학술 논문 수집 - 수집할 수 지정
-crawl_hw.crawl_papers_hw("딥러닝", 11)
+`crawl_hw.crawl_papers_hw("딥러닝", 11)`
 # 전체 검색된 논문 수: 8304개
 # 수집할 논문 수: 11개
 # CSV 파일이 /content/딥러닝_학위논문/딥러닝_학위논문.csv에 저장되었습니다.
