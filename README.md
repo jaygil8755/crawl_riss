@@ -9,8 +9,9 @@
 
 You can install this package via pip:
 
-`pip install crawl_riss`   
-`from crawl_riss import crawl_hs, crawl_hw`
+```bash
+pip install crawl_riss`   
+from crawl_riss import crawl_hs, crawl_hw
 
 ##### 학술 논문 수집
 `crawl_hs.crawl_papers_hs("생성형 AI")`
