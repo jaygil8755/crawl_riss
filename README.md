@@ -1,8 +1,9 @@
 # crawl_riss
-RISS 학술연구정보서비스에서 논문을 자동으로 수집하는 코드입니다.  
-키워드를 입력하면 학술논문과 학위논문을 엑셀 파일과 CSV 파일로 자동 저장합니다.  
-검색 결과가 1,000개가 넘으면 최대 1,000개만 수집하고, 키워드 뒤에 수집할 숫자를 지정할 수 있습니다. 
-This package provides functionalities to crawl academic papers from RISS using two different methods (HS and HW).
+- RISS 학술연구정보서비스에서 논문을 자동으로 수집하는 라이브러리입니다.  
+- 키워드를 입력하면 학술논문과 학위논문을 엑셀 파일과 CSV 파일로 자동 저장합니다.  
+- 검색 결과가 1,000개가 넘으면 최대 1,000개만 수집하고, 키워드 뒤에 수집할 숫자를 지정할 수 있습니다.
+- riss.kr 사이트가 바뀌면 코드가 작동안될 수도 있습니다.^^ 안되면 제 이메일(jaygil87555@gmail.com)으로 연락주세요.
+- This package provides functionalities to crawl academic papers from RISS using two different methods (HS and HW).
 
 ## Installation
 
