@@ -10,7 +10,6 @@ You can install this package via pip:
 ```bash
 pip install crawl_riss
 
-```bash
 from crawl_riss import crawl_hs, crawl_hw
 crawl_hs.crawl_papers_hs("생성형 AI")
 
@@ -19,7 +18,6 @@ crawl_hs.crawl_papers_hs("생성형 AI")
 CSV 파일이 /content/생성형_AI_학술논문/생성형_AI_학술논문.csv에 저장되었습니다.
 Excel 파일이 /content/생성형_AI_학술논문/생성형_AI_학술논문.xlsx에 저장되었습니다.
 
-```bash
 crawl_hw.crawl_papers_hw("생성형 AI")
 전체 검색된 논문 수: 374개
 수집할 논문 수: 374개
