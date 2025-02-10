@@ -20,6 +20,7 @@ ccl_code=&language=&inside_outside=&fric_yn=&db_type=&image_yn=&regnm=&gubun=&kd
     if total_papers_tag:
         total_papers = int(total_papers_tag.text.replace(',', ''))  # 숫자에 있는 콤마 제거 후 int 변환
         return total_papers
+        print(f"검색된 논문 수: {total_papers}개")
     else:
         return 0
 
@@ -37,7 +38,7 @@ def crawl_papers_hw(search_keyword, max_papers=1000):
     title, writer, university, year, grad, link, abstracts = [], [], [], [], [], [], []
 
     # 페이지별로 논문 데이터 수집
-    for start_count in range(0, papers_to_collect, 10):
+    for start_count in range(0, papers_to_collect, 100):
         # 각 페이지의 URL
         page_url = f'http://www.riss.kr/search/Search.do?isDetailSearch=N&searchGubun=true&viewYn=OP&query={search_keyword}\
 &queryText=&iStartCount={start_count}&iGroupView=5&icate=re_a_kor&colName=bib_t&exQuery=&exQueryText=&order=%2FDESC&onHanja=false&strSort=RANK&pageScale=100\
