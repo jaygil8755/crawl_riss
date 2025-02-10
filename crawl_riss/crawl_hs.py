@@ -36,7 +36,7 @@ def crawl_papers_hs(search_keyword, max_papers=1000):
     title, writer, publisher, year, journal, link, abstracts = [], [], [], [], [], [], []
 
     # 페이지별로 논문 데이터 수집
-    for start_count in range(0, papers_to_collect, 10):
+    for start_count in range(0, papers_to_collect, 100):
         # 각 페이지의 URL
         page_url = f"https://www.riss.kr/search/Search.do?isDetailSearch=N&searchGubun=true&viewYn=OP&query={search_keyword}\
 &queryText=&iStartCount={start_count}&iGroupView=5&icate=all&colName=re_a_kor&exQuery=&exQueryText=&order=%2FDESC&onHanja=false&strSort=RANK&pageScale=100\
