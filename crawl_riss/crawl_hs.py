@@ -19,6 +19,7 @@ def get_total_papers_count(search_keyword, start_count=0):
     if total_papers_tag:
         total_papers = int(total_papers_tag.text.replace(',', ''))  # 숫자에 있는 콤마 제거 후 int 변환
         return total_papers
+        print(f"전체 검색된 논문 수: {total_papers}개")
     else:
         return 0
 
