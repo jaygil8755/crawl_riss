@@ -13,7 +13,14 @@ You can install this package via pip:
 pip install crawl_riss   
 from crawl_riss import crawl_hs, crawl_hw
 
-# 학술 논문 수집
+# 해당 키워드로 검색된 논문 수를 확인 함수 - 학술논문
+keyword = "(생성형 ai 교육) | (챗gpt 교육)"
+crawl_hs.get_total_papers_count(keyword)
+
+# 해당 키워드로 검색된 논문 수를 확인 함수 - 학위논문
+crawl_hw.get_total_papers_count(keyword)
+
+# 학술 논문 수집 - 최대 1,000편 수집 가능
 crawl_hs.crawl_papers_hs("생성형 AI")
 
 > 전체 검색된 논문 수: 1079개
@@ -21,7 +28,7 @@ crawl_hs.crawl_papers_hs("생성형 AI")
 > CSV 파일이 /content/생성형_AI_학술논문/생성형_AI_학술논문.csv에 저장되었습니다.
 > Excel 파일이 /content/생성형_AI_학술논문/생성형_AI_학술논문.xlsx에 저장되었습니다.
 
-# 학위 논문 수집
+# 학위 논문 수집 - 최대 1,000편 수집 가능
 crawl_hw.crawl_papers_hw("생성형 AI")
 
 > 전체 검색된 논문 수: 374개
@@ -29,7 +36,7 @@ crawl_hw.crawl_papers_hw("생성형 AI")
 > CSV 파일이 /content/생성형_AI_학위논문/생성형_AI_학위논문.csv에 저장되었습니다.
 > Excel 파일이 /content/생성형_AI_학위논문/생성형_AI_학위논문.xlsx에 저장되었습니다.`
 
-# 학술 논문 수집 - 수집할 수 지정
+# 학술 논문 수집 - 수집할 개수 지정
 crawl_hw.crawl_papers_hw("딥러닝", 11)
 
 > 전체 검색된 논문 수: 8304개
